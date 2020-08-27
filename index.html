@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <title>Autocomplete</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        var availableTags = [
+        "Car",
+        "Bugatti",
+        "Toyota",
+        "C++",
+        "JavaScript",
+        "PHP",
+        "Python",
+        "React",
+        "Ionic"
+        ];
+        $( "#auto_comp" ).autocomplete({
+        source: availableTags
+        });
+    } );
+    </script>
+    <link href="css/main.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    
+    <div class="s010">
+      <form>
+        <h1 align="center" id="title">Redis Autocomplete</h1>
+        <div class="inner-form">
+          <div class="basic-search">
+            <div class="input-field">
+              <input id="auto_comp" class="form-control autocomplete" type="text" placeholder="Type Keywords" />
+              
+            </div>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+        
+  </body>
+</html>
